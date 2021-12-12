@@ -69,13 +69,13 @@
                                         <rect key="frame" x="110.5" y="0.0" width="271.5" height="138"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-0T-uhj">
-                                                <rect key="frame" x="23" y="0.0" width="226" height="31"/>
+                                                <rect key="frame" x="27" y="0.0" width="218" height="31"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5aL-gs-Qra">
-                                                <rect key="frame" x="23" y="54" width="226" height="31"/>
+                                                <rect key="frame" x="27" y="54" width="218" height="31"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z01-LR-3Wh">
-                                                <rect key="frame" x="23" y="108" width="226" height="31"/>
+                                                <rect key="frame" x="27" y="108" width="218" height="31"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -104,6 +104,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cBQ-lo-ZaR" secondAttribute="bottom" constant="200" id="t1g-X7-SHO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="f7r-dt-WLg" id="6ar-O7-tcc"/>
+                        <outlet property="blueSlider" destination="z01-LR-3Wh" id="Slm-Ih-wPo"/>
+                        <outlet property="colorView" destination="BQn-Xj-LSO" id="MOT-15-Epp"/>
+                        <outlet property="countBlue" destination="xZX-50-uUU" id="nXI-Zc-1bt"/>
+                        <outlet property="countGreen" destination="Xjn-fx-ddC" id="NBf-5F-8a4"/>
+                        <outlet property="countRed" destination="o9V-db-irV" id="OVa-cd-Ubz"/>
+                        <outlet property="greenLabel" destination="uTI-RU-rJa" id="T0X-9J-UsA"/>
+                        <outlet property="greenSlider" destination="5aL-gs-Qra" id="Bcb-px-jFj"/>
+                        <outlet property="redLabel" destination="x60-o4-9lX" id="gK0-NJ-hIf"/>
+                        <outlet property="redSlider" destination="2Zi-0T-uhj" id="fwR-Fy-sOQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
