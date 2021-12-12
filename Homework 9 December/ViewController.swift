@@ -25,9 +25,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        countRed.text = ""
+        countGreen.text = ""
+        countBlue.text = ""
     }
-
-
+    @IBAction func sliderRedAction() {
+    }
+    @IBAction func sliderGreenAction() {
+    }
+    @IBAction func sliderBlueAction() {
+    }
 }
 
