@@ -25,40 +25,46 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        countRed.text = ""
-        countGreen.text = ""
-        countBlue.text = ""
         
         redSlider.value = 1
-        redSlider.minimumValue = 1
-        redSlider.maximumValue = 100
+        redSlider.minimumValue = 0
+        redSlider.maximumValue = 1
         redSlider.minimumTrackTintColor = .red
         redSlider.maximumTrackTintColor = .gray
         redSlider.thumbTintColor = .yellow
         
         greenSlider.value = 1
-        greenSlider.minimumValue = 1
-        greenSlider.maximumValue = 100
+        greenSlider.minimumValue = 0
+        greenSlider.maximumValue = 1
         greenSlider.maximumTrackTintColor = .green
         greenSlider.maximumTrackTintColor = .gray
         greenSlider.thumbTintColor = .yellow
         
         blueSlider.value = 1
-        blueSlider.minimumValue = 1
-        blueSlider.maximumValue = 100
+        blueSlider.minimumValue = 0
+        blueSlider.maximumValue = 1
         blueSlider.minimumTrackTintColor = .blue
         blueSlider.maximumTrackTintColor = .gray
         blueSlider.thumbTintColor = .yellow
         
+        countRed.text = String(redSlider.value)
+        countGreen.text = String(greenSlider.value)
+        countBlue.text = String(blueSlider.value)
     }
+    
     @IBAction func sliderRedAction() {
         countRed.text = String(redSlider.value)
+        let redColorValue = CGFloat(redSlider.value)
     }
     @IBAction func sliderGreenAction() {
         countGreen.text = String(greenSlider.value)
+        let greenSliderValue = CGFloat(greenSlider.value)
+       
     }
     @IBAction func sliderBlueAction() {
         countBlue.text = String(blueSlider.value)
+        let blueColorValue = CGFloat(blueSlider.value)
+        colorView.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue)
     }
 }
 
