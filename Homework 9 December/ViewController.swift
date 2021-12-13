@@ -54,17 +54,18 @@ class ViewController: UIViewController {
     
     @IBAction func sliderRedAction() {
         countRed.text = String(redSlider.value)
-        let redColorValue = CGFloat(redSlider.value)
+        let redSliderValue = CGFloat(redSlider.value)
+        colorView.backgroundColor = UIColor(red: redSliderValue)
     }
     @IBAction func sliderGreenAction() {
         countGreen.text = String(greenSlider.value)
         let greenSliderValue = CGFloat(greenSlider.value)
-       
+        colorView.backgroundColor = UIColor(green: greenSliderValue)
     }
     @IBAction func sliderBlueAction() {
         countBlue.text = String(blueSlider.value)
-        let blueColorValue = CGFloat(blueSlider.value)
-        colorView.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue)
+        let blueSliderValue = CGFloat(blueSlider.value)
+        colorView.backgroundColor = UIColor(blue: blueSliderValue)
     }
 }
 

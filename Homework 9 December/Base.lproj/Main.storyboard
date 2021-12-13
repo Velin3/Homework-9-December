@@ -69,21 +69,21 @@
                                         <rect key="frame" x="110.33333333333334" y="0.0" width="285.66666666666663" height="138"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-0T-uhj">
-                                                <rect key="frame" x="20" y="0.0" width="246" height="31"/>
+                                                <rect key="frame" x="18" y="0.0" width="250" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
                                                 <connections>
                                                     <action selector="sliderRedAction" destination="BYZ-38-t0r" eventType="valueChanged" id="c2d-so-2Sx"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5aL-gs-Qra">
-                                                <rect key="frame" x="20" y="54" width="246" height="31"/>
+                                                <rect key="frame" x="18" y="54" width="250" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
                                                     <action selector="sliderGreenAction" destination="BYZ-38-t0r" eventType="valueChanged" id="fF1-ZK-X15"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z01-LR-3Wh">
-                                                <rect key="frame" x="20" y="108" width="246" height="31"/>
+                                                <rect key="frame" x="18" y="108" width="250" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="sliderBlueAction" destination="BYZ-38-t0r" eventType="valueChanged" id="gzV-g8-X22"/>
