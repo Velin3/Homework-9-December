@@ -28,12 +28,37 @@ class ViewController: UIViewController {
         countRed.text = ""
         countGreen.text = ""
         countBlue.text = ""
+        
+        redSlider.value = 1
+        redSlider.minimumValue = 1
+        redSlider.maximumValue = 100
+        redSlider.minimumTrackTintColor = .red
+        redSlider.maximumTrackTintColor = .gray
+        redSlider.thumbTintColor = .yellow
+        
+        greenSlider.value = 1
+        greenSlider.minimumValue = 1
+        greenSlider.maximumValue = 100
+        greenSlider.maximumTrackTintColor = .green
+        greenSlider.maximumTrackTintColor = .gray
+        greenSlider.thumbTintColor = .yellow
+        
+        blueSlider.value = 1
+        blueSlider.minimumValue = 1
+        blueSlider.maximumValue = 100
+        blueSlider.minimumTrackTintColor = .blue
+        blueSlider.maximumTrackTintColor = .gray
+        blueSlider.thumbTintColor = .yellow
+        
     }
     @IBAction func sliderRedAction() {
+        countRed.text = String(redSlider.value)
     }
     @IBAction func sliderGreenAction() {
+        countGreen.text = String(greenSlider.value)
     }
     @IBAction func sliderBlueAction() {
+        countBlue.text = String(blueSlider.value)
     }
 }
 
